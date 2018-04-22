@@ -1,0 +1,42 @@
+2. Change Letter Case
+Okay, so now that we’ve seen how to make a change to every paragraph, let’s look at how we can be a bit more selective. Let’s create a designation for paragraphs that should be in small caps. Here’s how we’d do that:
+
+p.smallcaps {
+  font-variant: small-caps;
+}
+To make a paragraph that’s entirely in small caps, we’ll use a slightly different HTML tag. Here’s what it looks like:
+
+<p class="smallcaps">Your paragraph here.</p>
+As you can see, adding a dot and a class name to any specific element in CSS specifies a sub-type of that element defined by a class. You can do this with text, images, links, and just about anything else.
+
+If you want to change the case of a set of text to a specific case, you can use these CSS lines:
+
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+The last one capitalizes the first letter of every sentence.
+
+3. Change Link Colors
+Let’s try changing the style of something other than a full paragraph. There are four different colors a link can be assigned: its standard color, its visited color, its hover color, and its active color (which it displays while you’re clicking on it). Here’s how we might change those:
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: rebeccapurple;
+}
+
+a:active {
+  color: teal;
+}
+Note that each “a” is followed by a colon, not a dot.
+
+Each one of those declarations changes the color of a link in a specific context. There’s no need to change the class of a link to get it to change color. It will all be determined by the user and the state of the link.
+
+4. Remove Link Underlines
+While underlined text pretty clearly indicates a link, it sometimes looks nicer to scrap that underline. This is accomplished with the “text-decoration” attribute. Here’s how we’d get rid of underlines on links:
