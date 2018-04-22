@@ -1,0 +1,5 @@
+set(ipblocklisttest_SRCS ipblocklisttest.cpp ../ipblocklist.cpp)
+add_executable(ipblocklisttest ${ipblocklisttest_SRCS})
+add_test(ipblocklisttest ipblocklisttest)
+ecm_mark_as_test(ipblocklisttest)
+target_link_libraries(ipblocklisttest Qt5::Core Qt5::Network Qt5::Test ktcore)
